@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/946e569a27.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/programme.css">
+    <script src="index.js" defer></script>
+    <title>Symphony</title>
+</head>
+<body>
+    <header>
+
+    <div class="navbar">
+        <div class="logo"><h1>Symphony</h1></div>
+        <ul class="links">
+            <li><a class = "title" href = "index.html">Home</a></li>
+            <li><a class = "title" href = "about.html">About</a></li>
+            <li><a class = "title" href = "programme.html">Program</a></li>
+            <li><a class = "title" href = "tickets.html">Tickets</a></li>
+        </ul>
+
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+    <div class ="dropdown_menu ">
+        <li><a class = "title"href = "index.html">Home</a></li>
+        <li><a class = "title"href = "about.html">About</a></li>
+        <li><a class = "title"href = "programme.html">Program</a></li>
+        <li><a class = "title"href = "tickets.html">Tickets</a></li>
+    </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn_i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <div class="container">
+        <div class="card" >
+            <img src="./assets/Rock%201.jpg" alt="" class="card__img">
+            <h4 class="card__title">Rolling Rock</h4>
+            <p class="card__description">"Event 1: Unleash the Energy! Join us for a Concert Extravaganza That Will Rock Your World - Don't Miss It!"</p>
+            <a href="tickets.html" class="card__btn">Buy Tickets</a>
+        </div>
+
+
+        <div class="card">
+            <img src="./assets/Rock%202.jpg" alt="" class="card__img">
+            <h4 class="card__title">Chainbrokers</h4>
+            <p class="card__description">"Event 2: Unchain the Groove! Witness the Fusion of Sound as We Break Free - A Concert Experience You Won't Forget!"</p>
+            <a href="tickets.html" class="card__btn">Buy Tickets</a>
+        </div>
+
+        <div class="card">
+            <img src="./assets/Rock%203.jpg" alt="" class="card__img">
+            <h4 class="card__title">Stone Groove</h4>
+            <p class="card__description">"Event 3: Feel the Earthy Vibes! Get Ready to Groove at Our Concert - Where Music Meets the Soul."</p>
+            <a href="tickets.html" class="card__btn">Buy Tickets</a>
+        </div>
+
+        <div class="card">
+            <img src="./assets/Rock%204.jpg" alt="" class="card__img">
+            <h4 class="card__title">Elektronomia</h4>
+            <p class="card__description">"Event 4: Electrifying Beats Await! Brace Yourself for a Sonic Spectacle That Will Ignite the Dance Floor - Don't Miss the Surge!"</p>
+            <a href="tickets.html" class="card__btn">Buy Tickets</a>
+        </div>
+    </div>
+</body>
+</html>

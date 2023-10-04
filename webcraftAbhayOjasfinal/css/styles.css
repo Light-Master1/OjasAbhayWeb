@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&family=Nunito+Sans:opsz@6..12&family=Pacifico&family=Roboto&family=Sono&family=Victor+Mono&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(160, 141, 141);
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+h1, h2{
+    font-family: 'Bree Serif';
+    color: rgb(124, 32, 32);
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+
+body{
+    background-image: url('/assets/background-image.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    text-align: center;
+    font-family:'Pacifico', sans-serif;
+    color: rgb(110, 36, 36);
+
+    size:5rem;
+    /* background-image: url('https://images.unsplash.com/photo-1518893063132-36e46dbe2428?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80');
+    background-position: left top;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased; */
+    transition: ease-in-out 0.1s;
+    margin-bottom: 0;
+}
+
+.title:hover{
+    background-position: center top;
+    cursor: pointer;
+    color: rgb(170, 30, 30);
+}
+
+#navbar{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#nav-hr{
+    background-color: rgb(170, 30, 30);
+    height: 3px;
+    border: none;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: rgb(190, 29, 29);
+    font-family: 'Bree Serif';
+    font-size: 1.5em;
+    padding: 5px 5vw;
+    transition-duration: 0.2s;
+}
+
+#navbar a:hover{
+    color: rgb(151, 16, 16);
+}
